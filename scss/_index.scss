@@ -1,0 +1,206 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color;
+    &-img{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+    }
+    &-title{
+        font-style: italic;
+        font-size: 80px;
+        line-height: 106px;
+        font-weight: 900;
+        margin-bottom: 32px;
+        & span{
+            display: block;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    &-desc{
+        font-style: italic;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    &-list{
+        display: flex;
+        gap: 16px;
+        justify-content: space-evenly;
+        & a{
+            display: block;
+            width: 60px;
+            height: 60px;
+            &:hover{
+                filter: brightness(0.8);
+            }
+        }
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    &-title{
+        font-size: 64px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 84px;
+        margin-bottom: 40px;
+    }
+    &-img{
+        margin-bottom: 20px;
+    }
+    &-content{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        & li:nth-child(1){
+            margin-bottom: 4px;
+        }
+        & li:nth-child(2){
+            margin-bottom: 8px;
+        }
+        & li:nth-child(3){
+            line-height: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::after{
+                display: block;
+                content: "";
+                width: 90%;
+                height: 1px;
+                background: $border-color;
+                margin-top: 24px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+    &-list{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        & li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+            }
+            &:before{
+                margin-right: 16px;
+                content: "";
+                display: block;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background: $icon-color;
+            }
+        }
+    }
+}
+
+.product{
+    padding-top: 56px;
+    padding-bottom: 160px;
+    background: $bg-color;
+    color: $font-color;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    &-title{
+        font-size: 64px;
+        line-height: 84px;
+        margin-bottom: 12px;
+    }
+    &-sub{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+    &-content{
+        font-size: 20px;
+        margin-bottom: 68px;
+    }
+    &-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & li:nth-child(1){
+            margin-bottom: 40px;
+        }
+        & li:nth-child(2){
+            margin-right: 24px;
+        }
+    }
+}
+
+.work{
+    padding-top: 56px;
+    padding-bottom: 144px;
+    text-align: center;
+    &-title{
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    &-content{
+        font-size: 20px;
+        margin-bottom: 56px;
+        font-weight: 500;
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px 24px;
+    }
+}
+
+.footer{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: $bg-color;
+    color:$font-color;
+    &-title{
+        text-align: center;
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 16px;
+    }
+    &-address{
+        text-align: center;
+        font-size: 24px;
+        line-height: 33px;
+        & p:nth-child(1){
+            margin-bottom: 16px;
+        }
+        & a{
+            color: $font-color;
+            text-decoration: none;
+            &:hover{
+                filter: brightness(0.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.p-14 {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.pt-14 {
+  padding-top: 56px;
+}
+
+.pb-40 {
+  padding-bottom: 160px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-white {
+  color: #FFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-style: italic;
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+}
+
+.title-span {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.desc-font {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.list-font {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.content-font {
+  font-size: 20px;
+}
+
+.card-sm {
+  width: 32%;
+}
+.card-sm p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.card-sm img {
+  margin-bottom: 16px;
+}
+
+.card-lg {
+  width: 49%;
+}
+.card-lg p {
+  line-height: 28px;
+}
+.card-lg img {
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+.banner-img {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+.banner-title {
+  font-style: italic;
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+.banner-title span {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+}
+.banner-desc {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.banner-list {
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+}
+.banner-list a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.banner-list a:hover {
+  filter: brightness(0.8);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.info-title {
+  font-size: 64px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 84px;
+  margin-bottom: 40px;
+}
+.info-img {
+  margin-bottom: 20px;
+}
+.info-content {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.info-content li:nth-child(1) {
+  margin-bottom: 4px;
+}
+.info-content li:nth-child(2) {
+  margin-bottom: 8px;
+}
+.info-content li:nth-child(3) {
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-content li:nth-child(3)::after {
+  display: block;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #707070;
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+.info-list {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.info-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.info-list li:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.info-list li:before {
+  margin-right: 16px;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #891818;
+}
+
+.product {
+  padding-top: 56px;
+  padding-bottom: 160px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+}
+.product-title {
+  font-size: 64px;
+  line-height: 84px;
+  margin-bottom: 12px;
+}
+.product-sub {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.product-content {
+  font-size: 20px;
+  margin-bottom: 68px;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-list li:nth-child(1) {
+  margin-bottom: 40px;
+}
+.product-list li:nth-child(2) {
+  margin-right: 24px;
+}
+
+.work {
+  padding-top: 56px;
+  padding-bottom: 144px;
+  text-align: center;
+}
+.work-title {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.work-content {
+  font-size: 20px;
+  margin-bottom: 56px;
+  font-weight: 500;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: #000;
+  color: #FFF;
+}
+.footer-title {
+  text-align: center;
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.footer-address {
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+}
+.footer-address p:nth-child(1) {
+  margin-bottom: 16px;
+}
+.footer-address a {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer-address a:hover {
+  filter: brightness(0.5);
+}/*# sourceMappingURL=all.css.map */
